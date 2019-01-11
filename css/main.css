@@ -11,9 +11,9 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -27,13 +27,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -41,12 +41,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -61,7 +61,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -69,9 +69,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -79,7 +79,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -87,120 +87,202 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+.content-wrapper{
+       width:90%;
+       margin: 50px 0;
+   }
+
+/*--- Base Header Footer Styles -----*/
+
 header,
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-header content-wrapper {
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-} 
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
+  }
 
 header nav {
   display: flex;
-    justify-content: space-around;
-    align-items: center;  
-    flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer {
+    flex-direction: column;
+  }
+
+footer p {
+    margin: 0;
+  }
+
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
+
+footer .contact {
+    margin-bottom: 50px;
+  }
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-footer social-icons {
-   display: flex;
-    justify-content: center;
-    align-items: center; 
+footer .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer social {
-   display: flex;
-    justify-content: center;
-    align-items: center;     
-}
+footer .copyright {
+    margin: 20px 0;
+  }
+/* ----Mobile Styles - Homepage --*/
 
-hero-area {
-   display: flex;
-    justify-content: center;
-    align-items: center;  
-    flex-flow: row wrap;
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 aside {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-features {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-flow: row wrap;
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-features features-items {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-flow: row wrap;
+.features h2 {
+    margin-bottom: 60px;
+  }
+
+.features article {
+  width: 55%;
+  margin: 30px 0;
 }
 
-reviews {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-flow: row wrap;
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-mission {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-flow: row wrap;
+.features p {
+  margin: 0;
 }
- 
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.reviews h2 {
+    margin-bottom: 40px;
+  }
+
+.reviews h3 {
+    width: 55%;
+    margin: 20px 0;
+}
+/*---About Page ---*/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 88%;
+  margin: 50px 20px;
+}
+
 contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 98%;
+  margin: 50px 20px;
 }
 
-faq {
+.contact-content p {
+    margin: 0;
+  }
+
+/*--- FAQ page ---*/
+
+.faq {
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-faq content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-flow: row wrap;
+.faq content-wrapper {
+    margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 87%;
 }
-
-
-
+.faq h2 {
+    margin-bottom: 40px;
+  }
+  
+  .faq-content {
+    margin-bottom: 50px;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -211,7 +293,7 @@ faq content-wrapper {
  */
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 /*
@@ -224,15 +306,15 @@ faq content-wrapper {
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
 }
 
 /*
@@ -243,13 +325,13 @@ faq content-wrapper {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
 }
 
 /*
@@ -257,7 +339,7 @@ faq content-wrapper {
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -274,12 +356,12 @@ faq content-wrapper {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -288,15 +370,175 @@ faq content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+    /*tablet styles here*/
+
+    .content-wrapper {
+        max-width: 640px;
+        margin: 100px 0;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    header .content-wrapper {
+      justify-content: space-between;
+        width: 83%;
+    }
+
+    header nav {
+        width: 28%;
+    }
+
+    header nav ul {
+        justify-content: space-around;
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+    aside .content-wrapper {
+        margin 50px 0;
+        display: flex;
+        justify-content: space-around  ;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    aside .content-wrapper .form-description, aside .content-wrapper .form {
+        width: 38%;
+        margin: 0;
+    }
+
+    .features article {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+        flex-basis: 2;
+        /*completely guessing on flex-basis - now it should grow but not sure how much and by what unit of measurement*/
+    }
+
+    .features .features-item-description{
+
+    }
+
+    .reviews article {
+        display: flex;
+        justify-content: center;
+    }
+
+    .reviews article div {
+        width: 83%;
+    }
+
+    footer .content-wrapper {
+        width: 65%;
+        margin: 100px 0:
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer .contact{
+        margin-bottom: 0;
+    }
+
+    footer .copyright {
+        width: 25%;
+    }
+
+    /*--About--*/
+
+    .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mission-content p {
+        width: 82%;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*--FAQ page --*/
+    .faq .content-wrapper {
+        justify-content: space-between;
+    }
+
+    .faq-content {
+        flex-basis: 40%;
+    }
+
+    .faq h2 {
+        width: 100%;
+    }
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+    /*desktop styles here*/
+
+    .content-wrapper {
+        max-width: 960px;
+    }
+
+    .hero-area h1 {
+        width: 55%;
+    }
+
+    aside .content-wrapper {
+        justify-content: space-between;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+        width: 27%;
+    }
+
+    .features h2 {
+        width: 71%;
+    }
+
+    .features article {
+        flex-basis: 2;
+        /*no idea how to guage this or what the unit is ....*/
+    }
+
+    .reviews article div {
+        width: 76%;
+    }
+
+    /*--About--*/
+
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+        width: 72%;
+    }
+
+    .contact-section .content-wrapper h2 {
+        margin-bottom: 100px;
+    }
+
+    /*---FAQ---*/
+
+    .faq h2 {
+        width: 100%;
+    }
+
+    .faq-content {
+        flex-basis: 2;
+        /* noooooo idea*/
+    }
 }
 
 /* ==========================================================================
@@ -306,71 +548,71 @@ faq content-wrapper {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    /*
+  /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    /*
+  /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-    thead {
-        display: table-header-group;
-    }
+  thead {
+    display: table-header-group;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
