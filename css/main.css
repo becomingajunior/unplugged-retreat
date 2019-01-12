@@ -97,11 +97,76 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.content-wrapper{
-       width:90%;
-       margin: 50px 0;
-   }
+/* General Styles */
+ 
+html {
+  font-size: 16px;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+ 
+ul, 
+ol {
+  /*font-size: 1.125em;
+  font-weight: bold;
+  color: #ccccff;
+  text-transform: uppercase;*/
+  /*according to code in 10-text styles solution code, above not needed ?? */
+  list-style-type: none;
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
 
+/*h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  /*color: #ccccff;
+  h1 not in 10-text styles solution code*/
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  /*color: #ccccff;*/
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  margin: 20px 0;
+  /*color: #ccccff;*/
+}
+ 
+p {
+  font-size: .875em;
+  /*color: #ccccff;*/
+  line-height: 1.285;
+}
+ 
+img {
+  max-width: 100%;
+  height: auto;
+}
+ 
+figure {
+ 
+}
+ 
+address {
+  font-style: normal;
+}
+
+.content-wrapper{
+  width:90%;
+  margin: 50px 0;
+}
 /*--- Base Header Footer Styles -----*/
 
 header,
@@ -121,7 +186,6 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 .header-divider {
@@ -140,8 +204,7 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -242,8 +305,6 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 88%;
-  margin: 50px 20px;
 }
 
 contact-section {
@@ -251,8 +312,6 @@ contact-section {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 98%;
-  margin: 50px 20px;
 }
 
 .contact-content p {
@@ -274,7 +333,6 @@ contact-section {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 87%;
 }
 .faq h2 {
     margin-bottom: 40px;
@@ -384,15 +442,15 @@ contact-section {
 
     header .content-wrapper {
       justify-content: space-between;
-        width: 83%;
+        width: 100%;
     }
 
     header nav {
-        width: 28%;
+        width: 20%;
     }
 
     header nav ul {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .header-divider {
@@ -400,38 +458,37 @@ contact-section {
     }
 
     aside .content-wrapper {
-        margin 50px 0;
+        margin: 50px 0;
         display: flex;
-        justify-content: space-around  ;
-        align-items: center;
+        justify-content: space-between;
         flex-flow: row wrap;
     }
 
     aside .content-wrapper .form-description, aside .content-wrapper .form {
-        width: 38%;
+        width: 35%;
         margin: 0;
     }
 
     .features article {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        flex-flow: row wrap;
-        flex-basis: 2;
-        /*completely guessing on flex-basis - now it should grow but not sure how much and by what unit of measurement*/
+        flex-flow: column wrap;
+        flex-basis: 50%;
+        /*completely unsure where this % comes from*/
     }
 
-    .features .features-item-description{
-
+    .features .features-item-description {
+        width: 50%;
     }
 
     .reviews article {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .reviews article div {
-        width: 83%;
+        width: 49%;
     }
 
     footer .content-wrapper {
@@ -441,7 +498,7 @@ contact-section {
 
     .footer-content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -450,7 +507,7 @@ contact-section {
     }
 
     footer .copyright {
-        width: 25%;
+        width: 100%;
     }
 
     /*--About--*/
@@ -462,13 +519,17 @@ contact-section {
     }
 
     .mission-content p {
-        width: 82%;
+        width: 40%;
+    }
+
+    .contact-section .content-wrapper h2 {
+      width: 80%;
     }
 
     .contact-content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
 
     /*--FAQ page --*/
@@ -478,6 +539,7 @@ contact-section {
 
     .faq-content {
         flex-basis: 40%;
+        /*no idea how this is computed*/
     }
 
     .faq h2 {
@@ -493,40 +555,40 @@ contact-section {
     }
 
     .hero-area h1 {
-        width: 55%;
+        width: 60%;
     }
 
     aside .content-wrapper {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
-        width: 27%;
+        width: 30%;
     }
 
     .features h2 {
-        width: 71%;
+        width: 70%;
     }
 
     .features article {
-        flex-basis: 2;
-        /*no idea how to guage this or what the unit is ....*/
+        flex-basis: 33%;
+        /*no idea how this measurement is found/calculated ....*/
     }
 
     .reviews article div {
-        width: 76%;
+        width: 42%;
     }
 
     /*--About--*/
 
     .mission h2,
     .contact-section .content-wrapper h2 {
-        width: 72%;
+        width: 100%;
     }
 
     .contact-section .content-wrapper h2 {
-        margin-bottom: 100px;
+        margin-bottom: 40px;
     }
 
     /*---FAQ---*/
@@ -536,7 +598,7 @@ contact-section {
     }
 
     .faq-content {
-        flex-basis: 2;
+        flex-basis: 35%;
         /* noooooo idea*/
     }
 }
